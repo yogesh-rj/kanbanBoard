@@ -1,0 +1,44 @@
+.section-height {
+  min-height: 20vh; }
+
+.full-width {
+  width: 100%; }
+
+.body-background {
+  background-color: #a4a1a9;
+  height: 100vh; }
+
+.add-card {
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  width: 100%;
+  text-align: left;
+  background-color: gray;
+  outline: 0 !important; }
+
+.title-list-div {
+  font-size: 1.6rem;
+  color: #fff;
+  height: 7vh;
+  background-color: #5c6c79; }
+
+.horizontal-centered {
+  display: flex;
+  justify-content: center; }
+
+.vertical-centered {
+  display: flex;
+  align-items: center; }
+
+.list-background {
+  background-color: #afb1ab;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem; }
+
+.no-padding {
+  padding: 0; }
+
+#new {
+  padding-left: 0; }

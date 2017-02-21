@@ -1,0 +1,67 @@
+<div class="row body-background">
+    <div class="col-xs-12 col-md-12 col-lg-12">
+        <div id="new" class="col-xs-12 col-lg-3 section-height list-background no-padding">
+            <div class="full-width title-list-div horizontal-centered vertical-centered">
+                New Features
+            </div>
+
+            <div class="full-width" ng-init="newFeatures = [{name:'Chat Module',dueDate:'2-03-2017',priority: 2},{name:'Profile Module',dueDate:'2-03-2017',priority: 2}]">
+                <ul>
+                    <li ng-repeat="item in newFeatures">
+                        <!--{{ item.name }}-->
+                    </li>
+                </ul>
+            </div>
+            <div class="full-width">
+                <input type="text" class="btn full-width add-card" placeholder="Add Card here.." />
+            </div>
+        </div>
+         <div id="on-hold" class="col-xs-12 col-lg-3 section-height list-background no-padding">
+            <div class="full-width title-list-div horizontal-centered vertical-centered">
+               On Hold
+            </div>
+            <div class="full-width" ng-init="onHold = [{name:'Data Module',dueDate:'2-04-2017',priority: 2},{name:'Connect Module',dueDate:'2-04-2017',priority: 2}]">
+                <ul>
+                    <!--{{onHold}}-->
+                    <li *ng-for="#item of onHold">
+                        {{ item }}
+                        <!--{{ item.name }}-->
+                    </li>
+                </ul>
+            </div>
+            <div class="full-width">
+                <input type="text" class="btn full-width add-card" placeholder="Add Card here.." />
+            </div>
+        </div>
+        <div id="in-progress" class="col-xs-12 col-lg-3 section-height list-background no-padding">
+            <div class="full-width title-list-div horizontal-centered vertical-centered">
+               In Progress
+            </div>
+            <div class="full-width" ng-init="inProgress = [{name:'SignIn',dueDate:'2-03-2017',priority: 1}]">
+                <ul>
+                    <li ng-repeat="item in inProgress">
+                        <!--{{ item.name }}-->
+                    </li>
+                </ul>
+            </div>
+            <div class="full-width">
+                <input type="text" class="btn full-width add-card" placeholder="Add Card here.." />
+            </div>
+        </div>
+        <div id="done" class="col-xs-12 col-lg-3 section-height list-background no-padding">
+            <div class="full-width title-list-div horizontal-centered vertical-centered">
+               Done
+            </div>
+            <div class="full-width" ng-init="doneTasks = [{ name:'SignUp',dueDate:'2-03-2017',priority: 1}]">
+                <ul>
+                    <li ng-repeat="item in doneTasks">
+                        <!--{{ item.name }}-->
+                    </li>
+                </ul>
+            </div>
+            <div class="full-width">
+                <input type="text" class="btn full-width add-card" placeholder="Add Card here.." />
+            </div>
+        </div>
+    </div>
+</div>
